@@ -13,18 +13,18 @@ public class MdxScriptedImporter : ScriptedImporter
     public bool importParticleEmitters = false;
     public bool importCollisionShapes = false;
     public List<int> excludeGeosets = new List<int>();
-    public List<string> excludeByTexture = new List<string>() { "gutz.blp" };
+    public List<string> excludeByTexture = new List<string>();
 
     // Materials.
     public bool importMaterials = true;
-    public bool addMaterialsToAsset = true;
+    public bool addMaterialsToAsset = false;
 
     // Animations.
     public bool importAnimations = true;
-    public bool addAnimationsToAsset = true;
+    public bool addAnimationsToAsset = false;
     public bool importTangents = true;
     public float frameRate = 960;
-    public List<string> excludeAnimations = new List<string>() { "Decay Bone", "Decay Flesh" };
+    public List<string> excludeAnimations = new List<string>();
 
     public override void OnImportAsset( AssetImportContext context )
     {
@@ -81,7 +81,7 @@ public class MdxScriptedImporter : ScriptedImporter
                 }
                 else
                 {
-                    string directory = directoryPath + "/Animations/";
+                    string directory = directoryPath + "/Animations/"+"";
                     Directory.CreateDirectory(directory);
 
                     AssetDatabase.CreateAsset(clip, directory + clip.name + ".anim");
