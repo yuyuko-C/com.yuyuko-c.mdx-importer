@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Editor",
+    "\\Runtime"
   ],
-  "SelectedNode": "\\E:\\Github\\com.yuyuko-c.mdx-importer",
+  "SelectedNode": "\\Runtime\\MdxExtension.cs",
   "PreviewInSolutionExplorer": false
 }

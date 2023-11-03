@@ -1,7 +1,8 @@
 ﻿using UnityEditor;
 using UnityEditor.AssetImporters;
 
-[CustomEditor(typeof(MdxScriptedImporter))]
+//[CustomEditor(typeof(MdxScriptedImporter))]
+[CustomEditor(typeof(MyMdxScriptedImporter))]
 public class MdxScriptedImporterInspector : ScriptedImporterEditor
 {
     // General.

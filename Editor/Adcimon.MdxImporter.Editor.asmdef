@@ -1,7 +1,8 @@
 {
     "name": "Adcimon.MdxImporter.Editor",
+    "rootNamespace": "",
     "references": [
-        "GUID:d10f8ae6fcf5136408da560d031c7a51"
+        "GUID:9830c32131abe1d45a87c3a6394fd06c"
     ],
     "includePlatforms": [
         "Editor"
